@@ -1,0 +1,58 @@
+.UpdateuserDetails-labels-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.UpdateuserDetails-labels-container div {
+  display: flex;
+  flex-direction: column;
+
+  width: 400px;
+  gap: 1rem;
+}
+.UpdateuserDetails-labels-container div span {
+  border: 1px solid grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 12px;
+}
+.UpdateuserDetails-labels-container div input {
+  outline-style: none;
+  border: none;
+  height: 40px;
+  padding: 2px;
+}
+.UpdateuserDetails-labels-container div select {
+  outline-style: none;
+  border: none;
+  height: 40px;
+  padding: 2px;
+  border: 1px solid grey;
+}
+.UpdateuserDetails-labels-container div label {
+  font-style: bold;
+  font-weight: 500;
+  margin-top: 5px;
+}
+.UpdateuserDetails-form-controller {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 500px;
+  padding: 10px;
+  cursor: text;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 6px;
+}
+.UpdateuserDetails-mainform-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+}

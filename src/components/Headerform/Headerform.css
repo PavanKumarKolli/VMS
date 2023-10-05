@@ -1,0 +1,28 @@
+.Headerform-header-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  color: white;
+  background-color: #bfb8b8;
+
+  /* position: fixed; */
+}
+.Headerform-header-options-container {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.Headerform-header-options-container button {
+  color: white;
+  background-color: rgb(20, 68, 156);
+  border: none;
+  outline-style: none;
+  width: 100px;
+  height: 30px;
+  border-radius: 6px;
+}

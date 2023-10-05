@@ -1,0 +1,127 @@
+.open-header-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  color: white;
+  background-color: #bfb8b8;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  /* position: fixed; */
+}
+
+.open-header-options-container {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.open-header-options-container button {
+  color: white;
+  background-color: rgb(2, 2, 65);
+  border: none;
+  outline-style: none;
+  width: 100px;
+  height: 30px;
+  border-radius: 6px;
+}
+.open-vistors {
+  width: 200px;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(170, 51, 130);
+  border-radius: 6px;
+  color: white;
+}
+.open-vistor-menu {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 12px;
+  cursor: pointer;
+}
+.open-Business {
+  width: 200px;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(66, 123, 230);
+  color: white;
+  border-radius: 6px;
+}
+.open-Personal {
+  width: 200px;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(194, 118, 55);
+  color: white;
+  border-radius: 6px;
+}
+.open-jobsvisit {
+  width: 200px;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(231, 75, 75);
+  color: white;
+  border-radius: 6px;
+}
+.open-admin-container {
+  width: 250px;
+  height: 250px;
+  padding: 12px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.open-profile-container {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: none;
+  outline-style: none;
+  height: 250px;
+  padding: 12px;
+
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.open-profile-container div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: start;
+  align-items: center;
+  width: 100%;
+}
+hr {
+  width: 80%;
+}
+.open-total-profilediv {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+}
