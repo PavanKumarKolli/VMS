@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="footer-down-logoi">
           <img
             style={{ width: "200px" }}
-            src="https://www.viithiisys.com/images/uploads/logo.png"
+            src="https://brihaspathi.com/img/logo/logo.png"
             alt=""
           />
         </div>
@@ -18,7 +18,7 @@ const Footer = () => {
               style={{
                 display: "flex",
                 alignItems: "center",
-                color: "#075bed",
+                color: "#white",
               }}
             >
               <AiOutlineArrowRight />
@@ -31,7 +31,7 @@ const Footer = () => {
               style={{
                 display: "flex",
                 alignItems: "center",
-                color: "#075bed",
+                color: "white",
               }}
             >
               {" "}
@@ -45,7 +45,7 @@ const Footer = () => {
               style={{
                 display: "flex",
                 alignItems: "center",
-                color: "#075bed",
+                color: "white",
               }}
             >
               <AiOutlineArrowRight />

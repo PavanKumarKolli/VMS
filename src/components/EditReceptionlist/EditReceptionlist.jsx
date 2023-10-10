@@ -10,7 +10,7 @@ const EditReceptionlist = () => {
   return (
     <div>
       <div>
-        <div className="Headerform-header-container">
+        <div className="Addrecplist-header-container">
           <div>
             <Link to="/">
               <img
@@ -20,11 +20,11 @@ const EditReceptionlist = () => {
               />
             </Link>
           </div>
-          <div className="Headerform-header-options-container">
+          <div className="Addrecplist-header-options-container">
             <span>Home</span>
 
             <Link
-              style={{ textDecoration: "none", color: "black" }}
+              style={{ textDecoration: "none", color: "white" }}
               to="/visitorlist"
             >
               Visitor List
@@ -33,7 +33,7 @@ const EditReceptionlist = () => {
             <span>My Profile</span>
             <Link
               to="/viewreceptionlist"
-              style={{ textDecoration: "none", color: "black" }}
+              style={{ textDecoration: "none", color: "white" }}
             >
               View ResceptionList
             </Link>

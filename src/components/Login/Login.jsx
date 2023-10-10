@@ -1,8 +1,14 @@
+import { useState } from "react";
 import Footer from "../Footer/Footer";
 import "./Login.css";
 import { Link } from "react-router-dom";
 
 const Login = () => {
+  const [isShowMore, setIsShowMore] = useState(false);
+
+  const toggleReadMoreLess = () => {
+    setIsShowMore(!isShowMore);
+  };
   return (
     <div>
       <div className="login-background-div">
@@ -56,20 +62,42 @@ const Login = () => {
 
         <div className="login-middle-div">
           <div className="login-homeleftside-con">
-            <h1 style={{ width: "600px", fontSize: "50px" }}>
+            <h1 id="heading" style={{ width: "600px", fontSize: "50px" }}>
               Make your workplace Safe &Secure
             </h1>
             <p>
               The safety of your employees and the enivornment in which they
               operate is paramount.The future of modern offices will be
-              check-ins.Employees and guests nbcan check in safely with the
-              Visitor Management System,Lowering the risk of infection
+              check-ins.
             </p>
+            {isShowMore && (
+              <p>
+                Employees and guests can check in safely with the Visitor
+                Management System,Lowering the risk of infection
+              </p>
+            )}
+
+            <button
+              className="loginvisitor-read-more-less"
+              onClick={toggleReadMoreLess}
+            >
+              {isShowMore ? "Read Less" : "Read More"}
+            </button>
           </div>
-          <div>
+          <div
+            style={{
+              width: "500px",
+              height: "350px",
+            }}
+          >
             <img
-              style={{ width: "500px", borderRadius: "6px" }}
-              src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/RE2wSVH_RE4dchU:VP1-539x349?resMode=sharp2&op_usm=1.5,0.65,15,0&qlt=90&fmt=png-alpha"
+              style={{
+                width: "100%",
+                backgroundImage: "cover",
+                borderRadius: "15px 50px",
+                backgroundSize: "cover",
+              }}
+              src="https://trotons.com/wp-content/uploads/2020/12/Visitor-Management-Software.png"
               alt=""
             />
           </div>

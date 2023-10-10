@@ -55,3 +55,15 @@
   align-items: center;
   margin-top: 12px;
 }
+/* @media (max-width: 768px) {
+  .Addrecplist-form-controller,
+  .Addrecplist-mainform-div,
+  .Addrecplist-labels-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+  }
+} */

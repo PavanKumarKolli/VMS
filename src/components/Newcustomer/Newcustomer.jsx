@@ -2,8 +2,25 @@ import "./Newcustomer.css";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { AiOutlineLock } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Newcustomer = () => {
+  const [Email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  function NewValidate() {
+    if (Email.toString() === "") {
+      alert("Enter Name");
+      return;
+    }
+    if (password !== 9) {
+      alert("Enter Password in correct format");
+      return;
+      // } else if (password.length < 10 && password.length > 5) {
+      //   alert("Enter Password in correct format");
+    }
+  }
+
   return (
     <div className="new-main-totaldiv">
       <form className="new-from-controller">
@@ -14,14 +31,22 @@ const Newcustomer = () => {
           <div>
             <label>Email Address:</label>
             <span>
-              <input type="text" placeholder="Email address" />
+              <input
+                type="text"
+                placeholder="Email address"
+                onChange={(e) => setEmail(e.target.value)}
+              />
               <MdOutlineMailOutline />
             </span>
           </div>
           <div>
             <label>Password:</label>
             <span>
-              <input type="password" placeholder=" Password" />
+              <input
+                type="password"
+                placeholder=" Minimum nine diits"
+                onClick={(e) => setPassword(e.target.value)}
+              />
               <AiOutlineLock />
             </span>
           </div>
@@ -35,6 +60,9 @@ const Newcustomer = () => {
           <span>Forgot Password?</span>
         </div>
         <button
+          onClick={() => {
+            NewValidate();
+          }}
           style={{
             border: "none",
             borderRadius: "3px",

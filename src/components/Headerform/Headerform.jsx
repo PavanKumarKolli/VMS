@@ -18,7 +18,7 @@ const Headerform = () => {
           <span>Home</span>
 
           <Link
-            style={{ textDecoration: "none", color: "black" }}
+            style={{ textDecoration: "none", color: "white" }}
             to="/visitorlist"
           >
             Visitor List
@@ -27,7 +27,7 @@ const Headerform = () => {
           <span>My Profile</span>
           <Link
             to="/viewreceptionlist"
-            style={{ textDecoration: "none", color: "black" }}
+            style={{ textDecoration: "none", color: "white" }}
           >
             View ResceptionList
           </Link>

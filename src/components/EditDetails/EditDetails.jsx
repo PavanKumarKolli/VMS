@@ -5,10 +5,43 @@ import { AiOutlineLock } from "react-icons/ai";
 import { GoPerson, GoPeople } from "react-icons/go";
 import { PiPhoneCallBold } from "react-icons/pi";
 import { GiDetour } from "react-icons/gi";
+import { Link } from "react-router-dom";
 
 const EditDetails = () => {
   return (
     <div>
+      <div>
+        <div className="Editrecplist-header-container">
+          <div>
+            <Link to="/">
+              <img
+                style={{ width: "150px", marginLeft: "20px" }}
+                src="https://brihaspathi.com/img/logo/logo.png"
+                alt=""
+              />
+            </Link>
+          </div>
+          <div className="Editrecplist-header-options-container">
+            <span>Home</span>
+
+            <Link
+              style={{ textDecoration: "none", color: "white" }}
+              to="/visitorlist"
+            >
+              Visitor List
+            </Link>
+
+            <span>My Profile</span>
+            <Link
+              to="/viewreceptionlist"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              View ResceptionList
+            </Link>
+            <button>Logout</button>
+          </div>
+        </div>
+      </div>
       <div className="Edituserdetails-mainform-div">
         <form className="Edituserdetails-form-controller">
           <h2>Edit Visitor Details</h2>

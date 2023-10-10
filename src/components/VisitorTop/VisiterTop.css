@@ -5,10 +5,14 @@
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  color: white;
-  background-color: #bfb8b8;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 255, 226, 1) 0%,
+    rgba(2, 3, 212, 1) 100%
+  );
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 600;
 }
 
 .VisiterTop-options-container {
@@ -19,8 +23,16 @@
   align-items: center;
 }
 .VisiterTop-options-container button {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 255, 226, 1) 0%,
+    rgba(2, 3, 212, 1) 100%
+  );
   color: white;
-  background-color: rgb(2, 2, 65);
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 6px;
   border: none;
   outline-style: none;
   width: 100px;
@@ -190,4 +202,75 @@ td {
 }
 .visitor-addbutton:hover {
   background-color: rgb(8, 93, 150);
+}
+
+/*  */
+
+.logout-vivistor-main-container {
+  padding: 30px;
+}
+
+.logout-vivistor-main-container h2 {
+  font-family: cursive;
+  color: #f5a67f;
+  text-align: center;
+}
+
+.logout-visitor-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  margin-left: 20px;
+}
+
+.logout-visitor-card {
+  margin-bottom: 30px;
+  position: relative;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 210px;
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+  height: 300px;
+  margin-right: 45px;
+  margin-bottom: 50px;
+}
+
+.logout-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  position: absolute;
+  top: -25px;
+  left: 29px;
+}
+
+.logout-after-image-container {
+  position: relative;
+  top: 120px;
+}
+
+.name-details-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name-details-card h5 {
+  font-family: "Lucida Handwriting";
+  font-family: cursive;
+  color: #f5c17f;
+}
+
+.name-details-card span {
+  font-family: cursive;
+  /* color: #f0c897;
+  color: #f0e4d5; */
+}
+.openpop {
+  position: absolute;
+  top: 0px;
+  left: 35%;
 }
