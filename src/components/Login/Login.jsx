@@ -81,7 +81,7 @@ const Login = () => {
               className="loginvisitor-read-more-less"
               onClick={toggleReadMoreLess}
             >
-              {isShowMore ? "Read Less" : "Read More"}
+              {isShowMore ? "Read Less..." : "Read More...  "}
             </button>
           </div>
           <div

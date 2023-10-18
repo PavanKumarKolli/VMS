@@ -86,22 +86,23 @@
 
 .loginvisitor-read-more-less {
   display: inline-block;
-  padding: 15px 25px;
-  font-size: 18px;
+  /* padding: 15px 25px; */
+  font-size: 12px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
   outline: none;
-  color: #fff;
-  background-color: #88651a;
+  color: #000000;
+  background-color: none;
+  background: none;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 2px #999;
+  /* box-shadow: 0 2px #999; */
 }
 .loginvisitor-read-more-less:active {
-  background-color: #bb8a21;
-  box-shadow: 0 2px #666;
-  transform: translateY(4px);
+  background-color: none;
+  /* box-shadow: 0 2px #666; */
+  transform: translateY(2px);
 }
 @media (max-width: 768px) {
   .login-background-div,

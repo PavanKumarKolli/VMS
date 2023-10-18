@@ -83,13 +83,6 @@ export const VisiterTop = ({ customer }) => {
 
     setNewFilterData(data);
   };
-  // const exportToExcel = () => {
-  //   const ws = XLSX.utils.json_to_sheet(setNewFilterData);
-  //   const wb = XLSX.utils.book_new();
-  //   XLSX.utils.book_append_sheet(wb, ws, "Sheet1");
-  //   XLSX.writeFile(wb, "setNewFilterData.xlsx");
-  // };
-  // console.log(vistors);
 
   const [popup, setPopup] = useState(false);
 
@@ -104,26 +97,8 @@ export const VisiterTop = ({ customer }) => {
     setPopup(false);
   };
   const tableRef = useRef(null);
-  // const { onDownload } = useDownloadExcel({
-  //   currentTableRef: tableRef.current,
-  //   filename: "Web Users",
-  //   sheet: "Web Users",
-  // });
-  // console.log(tableRef.current);
-  // const columnsToEliminate = ["age", "email"];
-  // const processedData = customer.map((row) => {
-  //   const newRow = { ...row };
-  //   columnsToEliminate.forEach((Image) => {
-  //     delete newRow[Image];
-  //   });
-  //   return newRow;
-  // });
 
-  // tableRef.current.map((each) => {
-  //   let v = {each.Image}
-  // })
-
-  // lksjoajdijf
+  // Export to Excel
   const excelChangeValue = () => {
     const workbook = new ExcelJS.Workbook();
     const sheet = workbook.addWorksheet("My Sheet");
@@ -216,7 +191,7 @@ export const VisiterTop = ({ customer }) => {
     });
   };
 
-  // lksdo;ajdd
+  //Download excel sheets
 
   return (
     <>
