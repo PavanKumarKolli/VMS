@@ -8,7 +8,7 @@
 .Addrecplist-labels-container div {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  /* width: 400px; */
   gap: 1rem;
 }
 .Addrecplist-labels-container div span {
@@ -18,10 +18,10 @@
   align-items: center;
   padding-right: 12px;
 }
-.Addrecplist-labels-container div input {
-  outline-style: none;
+.Addrecplist-labels-container > div > input {
+  outline: none;
   border: none;
-  height: 40px;
+  height: 30px;
   padding: 2px;
 }
 .Addrecplist-labels-container div select {
@@ -31,7 +31,7 @@
   padding: 2px;
   border: 1px solid grey;
 }
-.Addrecplist-labels-container div label {
+.Addrecplist-labels-container div {
   font-style: bold;
   font-weight: 500;
   margin-top: 5px;
@@ -41,9 +41,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: auto;
-  width: 500px;
-  padding: 10px;
   cursor: text;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 6px;
@@ -53,7 +50,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 12px;
+  /* margin-top: 12px; */
 }
 /* @media (max-width: 768px) {
   .Addrecplist-form-controller,

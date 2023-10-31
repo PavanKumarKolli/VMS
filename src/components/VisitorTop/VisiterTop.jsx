@@ -10,6 +10,8 @@ import VistorDetails from "../VistorDetails/VistorDetails";
 // import { XLSX } from "xlsx";
 // import { useDownloadExcel } from "react-export-table-to-excel";
 
+import { customer } from "../../data/dummy_data";
+
 const ExcelJS = require("exceljs");
 
 const vistors = [
@@ -39,7 +41,7 @@ const vistors = [
   },
 ];
 
-export const VisiterTop = ({ customer }) => {
+export const VisiterTop = () => {
   // let visitor = customer.filter((item) => item.Purpose === "visitor");
   const [time, setTime] = useState(new Date());
 

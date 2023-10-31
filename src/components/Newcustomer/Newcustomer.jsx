@@ -1,19 +1,21 @@
 import "./Newcustomer.css";
 import { MdOutlineMailOutline } from "react-icons/md";
-import { AiOutlineLock } from "react-icons/ai";
+import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 const Newcustomer = () => {
   const [Email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [showPass, setShowPass] = useState(true);
 
   function NewValidate() {
     if (Email.toString() === "") {
       alert("Enter Name");
       return;
     }
-    if (password !== 9) {
+    if (password.length <= 9) {
       alert("Enter Password in correct format");
       return;
       // } else if (password.length < 10 && password.length > 5) {
@@ -21,10 +23,39 @@ const Newcustomer = () => {
     }
   }
 
+  const showPassword = () => {
+    setShowPass(false);
+  };
+  const showPassworda = () => {
+    setShowPass(true);
+  };
+
+  const animation = {
+    offscreen: {
+      scale: 0.5,
+    },
+    onscreen: {
+      scale: 1,
+      transtion: {
+        type: "string",
+        duration: 2,
+      },
+    },
+  };
+
   return (
     <div className="new-main-totaldiv">
-      <form className="new-from-controller">
-        <h2>
+      <motion.form
+        className="new-from-controller"
+        initial="offscreen"
+        whileInView={"onscreen"}
+        variants={animation}
+      >
+        <h2
+          style={{
+            margin: "0px",
+          }}
+        >
           <center>SIGN IN</center>
         </h2>
         <div className="new-label-container">
@@ -43,17 +74,20 @@ const Newcustomer = () => {
             <label>Password:</label>
             <span>
               <input
-                type="password"
+                type={showPass ? "password" : "text"}
                 placeholder=" Minimum nine diits"
                 onClick={(e) => setPassword(e.target.value)}
               />
-              <AiOutlineLock />
+              {showPass ? (
+                <AiOutlineEye onClick={showPassword} />
+              ) : (
+                <AiOutlineEyeInvisible onClick={showPassworda} />
+              )}
             </span>
           </div>
         </div>
         <div className="new-checkbox-container">
           <span>
-            {" "}
             <input type="checkbox" id="checkbox" />
             <label for="checkbox">Remember me</label>
           </span>
@@ -68,8 +102,8 @@ const Newcustomer = () => {
             borderRadius: "3px",
             backgroundColor: "blue",
             color: "white",
-            width: "90%",
-            height: "30px",
+            width: "92%",
+            height: "35px",
           }}
         >
           Login
@@ -82,7 +116,7 @@ const Newcustomer = () => {
             </span>
           </span>
         </div>
-      </form>
+      </motion.form>
     </div>
   );
 };

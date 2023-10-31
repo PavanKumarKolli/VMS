@@ -11,50 +11,73 @@ const Signuppage = () => {
     <div>
       <div className="singup-mainform-div">
         <form className="signup-form-controller">
-          <h2>SIGN UP</h2>
+          <h2
+            style={{
+              margin: "0px",
+            }}
+          >
+            SIGN UP
+          </h2>
           <div className="signup-labels-container">
             <div>
-              <label>Email Address:</label>
               <span>
-                {" "}
-                <input type="text" placeholder="Enter Email/User name" />
+                <input
+                  className="input__pad"
+                  type="text"
+                  placeholder="Enter Email/User name"
+                />
                 <CiMail />
               </span>
             </div>
             <div>
-              <label>Password:</label>
               <span>
-                {" "}
-                <input type="password" placeholder="Enter Password" />
+                <input
+                  className="input__pad"
+                  type="password"
+                  placeholder="Enter Password"
+                />
                 <AiOutlineLock />
               </span>
             </div>
-            <div>
-              <label>Name:</label>
-              <span>
-                {" "}
-                <input type="text" placeholder="Enter Name" />
-                <GoPerson />
-              </span>
+            <div className="signup__name__phone">
+              <div>
+                <span>
+                  <input
+                    className="input__pad"
+                    type="text"
+                    placeholder="Enter Name"
+                  />
+                  <GoPerson />
+                </span>
+              </div>
+              <div>
+                <span>
+                  <input
+                    className="input__pad"
+                    type="text"
+                    placeholder="Enter Phone number"
+                  />
+                  <PiPhoneCallBold />
+                </span>
+              </div>
             </div>
             <div>
-              <label>Phone Number:</label>
               <span>
                 {" "}
-                <input type="text" placeholder="Enter Phone number" />
-                <PiPhoneCallBold />
-              </span>
-            </div>
-            <div>
-              <label> Address:</label>
-              <span>
-                {" "}
-                <input type="text" placeholder="Address" />
+                <textarea
+                  cols="80"
+                  rows="4"
+                  type="text"
+                  placeholder="Address"
+                  style={{
+                    border: "none",
+                    outline: "none",
+                  }}
+                ></textarea>
                 <FaRegAddressCard />
               </span>
             </div>
             <div>
-              <label> Profile pic:</label>
               <span>
                 {" "}
                 <input
@@ -73,7 +96,7 @@ const Signuppage = () => {
             <div>
               <button
                 style={{
-                  marginTop: "12px",
+                  // marginTop: "12px",
                   height: "35px",
                   backgroundColor: "blue",
                   outlineStyle: "none",
@@ -84,7 +107,11 @@ const Signuppage = () => {
               >
                 Sign Up/Register
               </button>
-              <p>
+              <p
+                style={{
+                  margin: "0px",
+                }}
+              >
                 <center>
                   Already have an account?/<Link to="/login"> Login</Link>
                 </center>
